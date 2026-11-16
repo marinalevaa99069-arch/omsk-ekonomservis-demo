@@ -1,0 +1,16 @@
+
+:root { --c-canvas:#15232b; --c-surface:#20333f; --c-ink:#f5f7f7; --c-ink-soft:#c5d0d8; --c-accent:#f6c775; --c-accent-deep:#f6c775; --c-accent-ink:#392705; --f-display: "Segoe UI",sans-serif; --f-text: "Segoe UI",sans-serif; }
+.s-hero { align-items:center; gap:clamp(24px,5vw,72px); padding-top:clamp(30px,4vw,68px); }
+.s-hero h1 { font-size:clamp(2.1rem,5vw,4.5rem); font-weight:750; line-height:1.04; letter-spacing:-.05em; }
+.s-hero__img img { display:block; aspect-ratio:5 / 4; object-position:center; }
+.s-hero__img figcaption { padding-top:9px; color:var(--c-ink-soft); font-size:.8rem; line-height:1.4; }
+.s-hero__img figcaption a { color:inherit; text-decoration:underline; }
+.s-eyebrow { color:var(--c-accent); }
+.s-btn { min-height:44px; }
+.s-board__row { grid-template-columns:1fr; }
+@media(max-width:700px) {
+  .s-hero { gap:22px; padding-top:32px; }
+  .s-hero__img { order:0; }
+  .s-hero__img img { aspect-ratio:16 / 10; }
+  .s-hero h1 { margin-top:10px; }
+}
